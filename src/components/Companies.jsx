@@ -1,18 +1,17 @@
 const companies = [
-	"Polygon",
-	"Solana",
-	"Flow",
-	"Amazon",
-	"Google",
-	"Filecoin",
-	"Shardeum",
-	"Topl",
-	"Chainlink",
-	"5ire chain",
-	"IPFS",
-	"Tezos",
-	"Aurora Chain",
-	"Binance",
+	"./polygon.png",
+	"./solana.png",
+	"./flow.png",
+	"./amazon.png",
+	"./google.png",
+	"./filecoin.png",
+	"./shardeum.png",,
+	"./chainlink.png",
+	"./5ire.svg",
+	"./ipfs.png",
+	"./tezoz.png",
+	"./aurora.png",
+	"./binance.png",
 	"Hashed Emergent",
 	"Xinfin Network",
 	"Zcash",
@@ -27,8 +26,8 @@ const Companies = () => {
 			<div className="flex text-white pt-10 flex-wrap items-center justify-center">
 				{companies.map((company) => (
 					<div className="card m-4">
-						<div className="card-body">
-							<h5 className="card-title">{company}</h5>
+						<div className="card-body w-20 h-10">
+							<img src={company} alt="" />
 						</div>
 					</div>
 				))}
