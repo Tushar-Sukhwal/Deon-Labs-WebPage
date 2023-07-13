@@ -5,16 +5,18 @@ import Card from "./components/Card";
 import Mission from "./components/Mission";
 import Team from "./components/Team";
 import Companies from "./components/Companies";
+import Footer from "./components/Footer";
 function App() {
-	return <div>
-    <NavBar />
-    <Hero />
-    <Mission /> 
-    <Companies />
-    <Team />
-    <Client />
-    <Card /> 
-  </div>;
+	return (
+		<div>
+			<NavBar />
+			<Hero />
+			<Mission />
+			<Companies />
+			<Team />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;

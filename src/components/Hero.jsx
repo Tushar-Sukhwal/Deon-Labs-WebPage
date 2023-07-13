@@ -1,5 +1,3 @@
-
-
 const Hero = () => {
 	return (
 		<div className="flex flex-col items-center h-[500px] pt-100px  flex-shrink-0 bg-black">
@@ -16,7 +14,6 @@ const Hero = () => {
 			<button className="bg-[#FF306E] opacity-80 text-white p-3 px-5  items-baseline align-middle  rounded-lg">
 				<h1 className=" opacity-100"> Launch App</h1>
 			</button>
-			
 		</div>
 	);
 };
