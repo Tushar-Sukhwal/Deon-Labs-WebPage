@@ -1,11 +1,11 @@
 const companies = [
-  "The Dapp List",
-"Router Protocol",
+  "/dapp list.svg",
+"/router protocol.png",
 "Gari(Chingari)",
-"Kleros",
+"/kleros.png",
 "Gitopia",
-"Superteam",
-"Bankless DAO",
+"/superteam.png",
+"/bankless.png",
 ]
 
 const Team = () => {
@@ -16,8 +16,8 @@ const Team = () => {
 			<div className="flex text-white pt-10 flex-wrap items-center justify-center">
 				{companies.map((company) => (
 					<div className="card m-4">
-						<div className="card-body">
-							<h5 className="card-title">{company}</h5>
+						<div className="card-body w-20">
+							<img src={company} alt="" />
 						</div>
 					</div>
 				))}
