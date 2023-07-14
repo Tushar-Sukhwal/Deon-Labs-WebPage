@@ -16,8 +16,9 @@ html {
 ::selection {
     background: #f81ce5;
 }
+
 .marquee {
-    --gap: 0.25rem;
+    --gap: 0.5rem;
     display: flex;
     width: 100%;
     overflow: hidden;
@@ -53,4 +54,24 @@ html {
     background-size: cover;
     background-image: url("./hero-bg.png");
     filter: blur(10rem);
+}
+
+#cursor {
+    @apply text-white capitalize text-xl relative;
+}
+
+.cursor-text {
+    @apply opacity-0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    @apply left-10 absolute border-4 rounded-lg p-1 font-semibold border-white bg-black;
+    transform: translateY(-15%);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
