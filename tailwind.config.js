@@ -16,6 +16,8 @@ export default {
 
       fontFamily: {
         inter: "Inter",
+        tektur : "Tektur",
+        poppins : "Poppins",
       },
 
       colors: {
