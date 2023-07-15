@@ -5,6 +5,8 @@ import Hero from "./components/Hero";
 import Mission from "./components/Mission";
 import NavBar from "./components/NavBar";
 import Team from "./components/Team";
+
+
 function App() {
     return (
         <div>

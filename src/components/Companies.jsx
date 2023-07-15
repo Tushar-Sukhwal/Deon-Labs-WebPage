@@ -2,7 +2,7 @@ const companies = [
     "./polygon.png",
     "./solana.png",
     "./flow.png",
-    "./amazon.png",
+    "./amazon.svg",
     "./google.png",
     "./filcoin.png",
     "./shardeum.png",
@@ -17,7 +17,7 @@ const companies = [
     "./polygon.png",
     "./solana.png",
     "./flow.png",
-    "./amazon.png",
+    "./amazon.",
     "./google.png",
     "./filcoin.png",
     "./shardeum.png",
@@ -48,7 +48,7 @@ const Companies = () => {
 
     return (
         <div className="flex flex-col justify-center items-center w-full bg-black pb-28">
-            <h1 className="text-white text-5xl ">Partners</h1>
+            <h1 className="text-white text-center font-inter text-5xl md:text-6xl lg:text-5xl  pb-20px mt-[120px] tracking-[0.1em] font-medium ">PARTNERS</h1>
             <div className="marquee">
                 <ul className="marquee__content">
                     {companies.map((company, idx) => (
