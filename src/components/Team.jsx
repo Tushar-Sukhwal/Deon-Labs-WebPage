@@ -30,10 +30,16 @@ const Companies = () => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center w-full bg-black pb-28">
+        <div className="flex flex-col justify-center items-center w-full bg-black pb-28 space-y-20">
+            <div className="space-y-10">
             <h1 className="text-white text-center font-inter text-5xl md:text-6xl lg:text-5xl font-bold pb-20px mt-[120px] tracking-[0.1em] font-medium">BUILT BY A TEAM FROM</h1>
+            <p className="text-white text-center font-poppins text-2xl font-normal leading-normal opacity-60">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.  Cumque nostrum iure <br /> cum magni animi perferendis ex iste vel fuga.
+                </p>
+            </div>
+            
             <div className="">
-                <ul className="">
+                <ul className="flex space-x-32">
                     {companies.map((company, idx) => (
                         <div
                             key={`${company}#${idx}`}

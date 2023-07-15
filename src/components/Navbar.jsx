@@ -7,12 +7,12 @@ const NavBar = () => {
             <nav>
             <ul className="flex w-[50%] justify-around m-auto items-center pt-3">
                 <li className="p-3 text-xl text-white text-center w-[150px] ">
-                    <img src="./DEON(2).png" alt="" />
+                    <img src="./DEON.png" alt="" />
                 </li>
-                <li className="p-3 text-red-700">Mission</li>
-                <li className="p-3 text-white">Partners</li>
-                <li className="p-3 text-white">Our Team</li>
-                <li className="p-3 text-white">Social</li>
+                <li className="p-3 text-white text-2xl">Mission</li>
+                <li className="p-3 text-white text-2xl">Partners</li>
+                <li className="p-3 text-white text-2xl">Our Team</li>
+                <li className="p-3 text-white  text-2xl">Social</li>
             </ul>
             </nav>
            

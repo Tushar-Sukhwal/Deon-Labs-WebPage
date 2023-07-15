@@ -1,9 +1,9 @@
 import AnimatedCursor from "react-animated-cursor";
-import Companies from "./components/Companies";
+import Partner from "./components/Partner";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Mission from "./components/Mission";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navbar";
 import Team from "./components/Team";
 
 
@@ -12,8 +12,10 @@ function App() {
         <div>
             <NavBar />
             <Hero />
+            <div className="space-y-reverse">
             <Mission />
-            <Companies />
+            <Partner />
+            </div>
             <Team />
             <Footer />
 
