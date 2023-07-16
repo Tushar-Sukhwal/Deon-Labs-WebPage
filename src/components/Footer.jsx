@@ -11,7 +11,7 @@ const Footer = () => {
 		cursor.innerText = "";
 	};
 	return (
-		<div className="bg-black  flex flex-col  justify-center items-center">
+		<main className="bg-black  flex flex-col  justify-center items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
 			<div className="space-y-4">
 			<h1 className="text-white text-center font-poppins text-5xl md:text-6xl lg:text-6xl font-bold pb-20px mt-[120px] mb-[100px] ">
 				YOU BUILD WEB3 PRODUCT,
@@ -19,16 +19,20 @@ const Footer = () => {
 			</h1>
 			</div>
 			
-			<div className="flex space-x-[100px] mb-[90px] bg-gradient-to-r from-cyan-500 to-blue-500 h-[100px] w-[500px] rounded-3xl items-center">
+			<div className="flex space-x-[100px] mb-[90px] bg-gradient-to-r from-cyan-500 to-blue-500 h-[100px] w-[500px] rounded-3xl items-center ">
+				<div>
 				<a href="mailto: hello@deonlabs.com">
 					<img
 						src="./mail.svg"
 						alt=""
-						className="px-[50px]"
+						className="px-[50px] hover:fill-[#FF306E]"
 						onMouseEnter={onMouseIn}
 						onMouseLeave={onMoueOut}
+						
 					></img>
 				</a>
+				</div>
+				
 				<a href="https://twitter.com/0xDeon">
 					<img
 						src="./twitter.svg"
@@ -57,7 +61,8 @@ const Footer = () => {
 					@2022-23
 				</p>
 			</div>
-		</div>
+			
+		</main>
 	);
 };
 export default Footer;

@@ -45,9 +45,9 @@ const Companies = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full bg-black pb-28 space-y-24">
             <div className="space-y-10">
-            <h1 className="text-white text-center font-inter text-5xl md:text-6xl lg:text-5xl  pb-20px mt-[120px] tracking-[0.1em] font-medium ">OUR PARTNERS</h1>
+            <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-center font-inter text-5xl md:text-6xl lg:text-5xl  pb-20px mt-[120px] tracking-[0.1em] font-medium ">OUR PARTNERS</h1>
             <p className="text-white text-center font-poppins text-2xl font-normal leading-normal opacity-60">
-            Serotonin drives paradigm shifting strategies to evolve the way businesses,<br /> consumers, and organizations operate around the world.
+            Deon motivates transformative strategies that revolutionize<br /> global business, consumer, and organizational operations., 
                 </p>
             </div>
             
@@ -61,7 +61,7 @@ const Companies = () => {
                             <img
                                 src={company}
                                 alt=""
-                                className="object-contain"
+                                className="object-contain "
                                 onMouseEnter={onMouseIn}
                                 onMouseLeave={onMoueOut}
                             />
@@ -102,7 +102,7 @@ const Companies = () => {
                         </div>
                     ))}
                 </ul>
-            
+                
         </div>
     );
 };

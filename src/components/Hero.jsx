@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <main className="flex flex-col items-center z-10 bg-black pb-44 relative">
-            <p className="text-white text-center font-poppins text-5xl md:text-6xl lg:text-8xl font-bold pb-20px mt-[120px]">
+            <p className="bg-gradient-to-r from-red-500 to-yellow-300 bg-clip-text text-transparent text-center font-tektur text-5xl md:text-6xl lg:text-8xl font-bold pb-20px mt-[120px]">
                 Web3 Ecosystem
                 <br /> Enabler
             </p>
