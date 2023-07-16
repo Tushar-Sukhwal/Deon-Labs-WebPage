@@ -1,3 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Tektur&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    background: black;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    background: #f81ce5;
+}
+
+::selection {
+    background: #f81ce5;
+}
+
+.marquee {
+    --gap: 0.5rem;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+}
+
+.marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    min-width: 100%;
+    gap: var(--gap);
+    animation: scroll 30s linear infinite;
+    animation-play-state: running;
+}
+
+.marquee:hover .marquee__content {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+.hero-bg {
+    z-index: -10;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./hero-bg.png");
+    filter: blur(10rem);
+}
+
+#cursor {
+    @apply text-white capitalize text-xl relative;
+}
+
+.cursor-text {
+    @apply opacity-0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    @apply left-10 absolute border-4 rounded-lg p-1 font-semibold border-white bg-black;
+    transform: translateY(-15%);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
