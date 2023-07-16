@@ -1,7 +1,7 @@
 const Mission = () => {
     return (
         <div className="flex flex-col items-center  pb-[200px] flex-shrink-0 bg-black">
-            <p className="bg-gradient-to-r from-red-500 to-yellow-300 bg-clip-text text-transparent text-center font-tektur text-8xl font-bold pb-20px">
+            <p className="text-white text-center font-tektur text-8xl font-bold pb-20px">
                 United by Web3
                 <br /> Ecosystem
             </p>

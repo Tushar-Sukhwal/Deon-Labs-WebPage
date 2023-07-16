@@ -29,6 +29,11 @@ const organizations = [
     
 ]
 
+const friends = [
+    "./topl.png", 
+    "./Hashed_Emergent.jpg",
+]
+
 const Companies = () => {
     const onMouseIn = (e) => {
         const cursor = document.querySelector("#cursor").firstChild;
@@ -94,6 +99,23 @@ const Companies = () => {
                             className="m-5 w-28 flex">
                             <img
                                 src={organization}
+                                alt=""
+                                className="object-contain"
+                                onMouseEnter={onMouseIn}
+                                onMouseLeave={onMoueOut}
+                            />
+                        </div>
+                    ))}
+                </ul>
+
+                <ul className="flex space-x-48">
+                    
+                    {friends.map((friend, idx) => (
+                        <div
+                            key={`${friend}#${idx}`}
+                            className="m-5 w-28 flex">
+                            <img
+                                src={friend}
                                 alt=""
                                 className="object-contain"
                                 onMouseEnter={onMouseIn}

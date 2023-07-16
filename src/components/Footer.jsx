@@ -19,13 +19,13 @@ const Footer = () => {
 			</h1>
 			</div>
 			
-			<div className="flex space-x-[100px] mb-[90px] bg-gradient-to-r from-cyan-500 to-blue-500 h-[100px] w-[500px] rounded-3xl items-center ">
+			<div className="flex justify-between px-10 mb-[90px] bg-gradient-to-r from-cyan-500 to-blue-500 h-[100px] w-[500px] rounded-3xl items-center  ">
 				<div>
 				<a href="mailto: hello@deonlabs.com">
 					<img
 						src="./mail.svg"
 						alt=""
-						className="px-[50px] hover:fill-[#FF306E]"
+						className="hover:fill-[#FF306E]"
 						onMouseEnter={onMouseIn}
 						onMouseLeave={onMoueOut}
 						
